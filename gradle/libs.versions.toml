@@ -3,6 +3,8 @@ accompanist-pager = "0.20.0"
 adapterRxjava = "2.0.0"
 agp = "8.2.0-alpha16"
 coil-compose = "2.4.0"
+firebaseBom = "32.2.2"
+googleServices = "4.3.15"
 gson = "2.10.1"
 hilt-android = "2.47"
 hilt-navigation-compose = "1.1.0-alpha01"
@@ -17,6 +19,7 @@ activity-compose = "1.7.2"
 compose-bom = "2023.08.00"
 retrofit = "2.9.0"
 roomVersion = "2.5.2"
+firebase-auth-ktx = "22.1.1"
 
 [libraries]
 accompanist-pager = { module = "com.google.accompanist:accompanist-pager", version.ref = "accompanist-pager" }
@@ -31,6 +34,8 @@ androidx-ui-util = { module = "androidx.compose.ui:ui-util", version.ref = "kotl
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil-compose" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+google-services = { module = "com.google.gms:google-services", version.ref = "googleServices" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt-android" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt-android" }
@@ -48,6 +53,8 @@ ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview
 ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
+firebase-auth-ktx = { group = "com.google.firebase", name = "firebase-auth-ktx"}
+firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

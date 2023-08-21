@@ -9,6 +9,9 @@ plugins {
     // Hilt
     id ("kotlin-kapt")
     id("com.google.dagger.hilt.android")
+
+    // Firebase
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -82,6 +85,13 @@ dependencies {
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
+
+    //Import the BoM for the Firebase platform versions
+    implementation (platform(libs.firebase.bom))
+    // Firebase:Authentication
+    implementation(libs.firebase.auth.ktx)
+    // Firebase:FireStore
+    implementation (libs.firebase.firestore.ktx)
 
     // Kotlin Runtime
     implementation (libs.core.ktx)
