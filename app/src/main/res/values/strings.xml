@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">court</string>
+    <string name="logo_image_content_description">Logo image</string>
+    <string name="presentation_images_content_description">Presentation Images</string>
 </resources>

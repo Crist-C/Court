@@ -4,6 +4,8 @@ package com.ccastro.court.presentation.components
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -14,7 +16,9 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.ccastro.court.presentation.ui.theme.CourtTheme
 
 
 @Composable
@@ -56,6 +60,21 @@ fun DefaultTextField (
             text = errorMsg,
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.error
+        )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun DefaultTextFieldPreview() {
+    val name = "Cristian"
+    CourtTheme {
+        DefaultTextField(
+            modifier = Modifier,
+            label = "Nombre",
+            icon = Icons.Default.AccountCircle,
+            value = name,
+            onValueChange = {}
         )
     }
 }
