@@ -4,6 +4,8 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
+import com.ccastro.court.presentation.screens.appPresentation.AppPresentationScreen
+import com.ccastro.court.presentation.screens.splash.SplashScreen
 
 fun NavGraphBuilder.introduceNavGraph(navHostController: NavHostController) {
     navigation(
@@ -11,7 +13,11 @@ fun NavGraphBuilder.introduceNavGraph(navHostController: NavHostController) {
         startDestination = IntroduceNavScreens.AppPresentation.route
     ){
         composable(route = IntroduceNavScreens.Splash.route) {
+            SplashScreen(navHostController = navHostController)
+        }
 
+        composable(route = IntroduceNavScreens.AppPresentation.route) {
+            AppPresentationScreen(navHostController = navHostController)
         }
     }
 }

@@ -108,6 +108,7 @@ dependencies {
 
     // Coil : descargar y visualizar imagenes desde una url
     implementation(libs.coil.compose)
+    implementation(libs.coil.gif)
 
     // Utils (Lerp)
     implementation(libs.androidx.ui.util)
