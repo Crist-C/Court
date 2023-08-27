@@ -103,6 +103,9 @@ dependencies {
     // Hilt Navigation
     implementation (libs.androidx.hilt.navigation.compose)
 
+    // Navigation Compose
+    implementation(libs.androidx.navigation.compose)
+
     // Pager
     implementation(libs.accompanist.pager)
 

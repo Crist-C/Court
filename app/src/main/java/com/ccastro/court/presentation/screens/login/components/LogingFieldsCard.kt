@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Email
+import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ShapeDefaults
 import androidx.compose.material3.Surface
@@ -17,9 +18,9 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.ccastro.court.presentation.components.DefaultButton
-import com.ccastro.court.presentation.components.DefaultEnunciado
-import com.ccastro.court.presentation.components.DefaultTextField
+import com.ccastro.court.presentation.components.defautls.DefaultButton
+import com.ccastro.court.presentation.components.defautls.DefaultEnunciado
+import com.ccastro.court.presentation.components.defautls.DefaultTextField
 import com.ccastro.court.presentation.screens.login.LoginViewModel
 import com.ccastro.court.presentation.ui.theme.CourtTheme
 
@@ -65,7 +66,7 @@ fun LogingFieldsCard(modifier: Modifier = Modifier, viewModel: LoginViewModel = 
                 value = state.password,
                 onValueChange = { viewModel.onPasswordInput(it.trim()) },
                 label = "Contraseña",
-                icon = Icons.Default.Email,
+                icon = Icons.Default.Lock,
                 hideText = true,
                 errorMsg = state.passwordErrorMsg,
                 onValidateData = {viewModel.validatePassword()}

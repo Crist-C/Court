@@ -2,4 +2,25 @@
     <string name="app_name">court</string>
     <string name="logo_image_content_description">Logo image</string>
     <string name="presentation_images_content_description">Presentation Images</string>
+    <string name="email">Correo electrónico</string>
+    <string name="CREATE_YOUR_ACCOUNT">CREA TU CUENTA</string>
+    <string name="por_favor_ingresa_tus_datos_para_continuar">Por favor ingresa tus datos para continuar</string>
+    <string name="password">Contraseña</string>
+    <string name="confirmar_contraseña">Confirmar Contraseña</string>
+    <string name="registrarme">REGISTRARME</string>
+    <string name="iniciar_sesion">INICIAR SESIÓN</string>
+    <string name="crear_mi_cuenta">CREAR MI CUENTA</string>
+    <string name="ingresa_al_menos_un_nombre">Ingresa tu nombre</string>
+    <string name="ingresa_al_menos_un_apellido">Ingresa tu apellido</string>
+    <string name="empty_string" />
+    <string name="ingresa_un_nombre_valido">Ingresa un nombre válido</string>
+    <string name="ingresa_t_email_de_forma_correcta">ingresa tú email de forma correcta</string>
+    <string name="ingresa_una_contraseña_que_cumpla_los_requerimientos">Ingresa al menos 6 caracteres</string>
+    <string name="las_contrase_as_no_coinciden">Las contraseñas no coinciden</string>
+    <string name="finaliza_tu_registro_title">FINALIZA TU REGISTRO\t</string>
+    <string name="nombres_input_field_text">Nombres</string>
+    <string name="apellidos_input_fiel_text">Apellidos</string>
+    <string name="pais_input_field_text">País</string>
+    <string name="celular">Número celular</string>
+    <string name="finalizar">FINALIZAR REGISTRO</string>
 </resources>

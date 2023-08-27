@@ -5,6 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
 import com.ccastro.court.presentation.screens.login.LoginScreen
+import com.ccastro.court.presentation.screens.signup.credencials.SignUpCredentialsScreen
 
 fun NavGraphBuilder.authNavGraph(navHostController: NavHostController) {
     navigation(
@@ -15,7 +16,7 @@ fun NavGraphBuilder.authNavGraph(navHostController: NavHostController) {
             LoginScreen(navHostController = navHostController)
         }
         composable(route = AuthNavScreens.SingUp.route) {
-            LoginScreen(navHostController = navHostController)
+            SignUpCredentialsScreen(navHostController = navHostController)
         }
     }
 }

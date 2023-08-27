@@ -7,7 +7,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import com.ccastro.court.domain.models.Response
-import com.ccastro.court.presentation.components.DefaultCircularProgress
+import com.ccastro.court.presentation.components.defautls.DefaultCircularProgress
 import com.ccastro.court.presentation.navigation.Graph
 import com.ccastro.court.presentation.screens.login.LoginViewModel
 

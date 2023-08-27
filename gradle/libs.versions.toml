@@ -17,6 +17,7 @@ kotlinComposeCompilerVersion = "1.4.3"
 lifecycle-runtime-ktx = "2.6.1"
 activity-compose = "1.7.2"
 compose-bom = "2023.08.00"
+navigationCompose = "2.7.1"
 retrofit = "2.9.0"
 roomVersion = "2.5.2"
 
@@ -24,6 +25,7 @@ roomVersion = "2.5.2"
 accompanist-pager = { module = "com.google.accompanist:accompanist-pager", version.ref = "accompanist-pager" }
 adapter-rxjava = { module = "com.squareup.retrofit2:adapter-rxjava", version.ref = "adapterRxjava" }
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomVersion" }
 androidx-room-paging = { module = "androidx.room:room-paging", version.ref = "roomVersion" }
 androidx-room-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomVersion" }

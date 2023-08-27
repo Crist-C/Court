@@ -7,6 +7,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.ccastro.court.presentation.screens.splash.components.NavigateTo
 import com.ccastro.court.presentation.screens.splash.components.SplashContent
 import com.ccastro.court.presentation.ui.theme.CourtTheme
 
@@ -16,10 +17,11 @@ fun SplashScreen(modifier: Modifier = Modifier, navHostController: NavHostContro
     Scaffold (
         topBar = {},
         content = {
-                  SplashContent(modifier = modifier)
+            SplashContent(modifier = modifier)
         },
         bottomBar = {}
     )
+    NavigateTo(navHostController = navHostController)
 }
 
 @Preview( showSystemUi = true, showBackground = true)

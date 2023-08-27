@@ -36,7 +36,7 @@ fun LoginBottonBar(navHostController: NavHostController){
         Text(
             modifier = Modifier
                 .clickable {
-                           navHostController.navigate(AuthNavScreens.SingUp.route)
+                    navHostController.navigate(AuthNavScreens.SingUp.route)
             },
             text = "Registrate",
             style = MaterialTheme.typography.titleMedium,

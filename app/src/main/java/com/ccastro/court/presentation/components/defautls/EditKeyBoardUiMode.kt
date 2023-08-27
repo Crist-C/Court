@@ -1,4 +1,4 @@
-package com.ccastro.court.presentation.components
+package com.ccastro.court.presentation.components.defautls
 
 import android.app.Activity
 import androidx.compose.runtime.Composable
