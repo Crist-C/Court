@@ -27,7 +27,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.ccastro.court.presentation.components.DefaultButton
+import com.ccastro.court.presentation.components.defautls.DefaultButton
 import com.ccastro.court.presentation.navigation.Graph
 import com.ccastro.court.presentation.screens.profile.ProfileViewModel
 import com.ccastro.court.presentation.ui.theme.CourtTheme

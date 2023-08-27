@@ -7,7 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.ccastro.court.presentation.components.DefaultTopBar
+import com.ccastro.court.presentation.components.defautls.DefaultTopBar
 import com.ccastro.court.presentation.screens.profile.contents.ProfileContent
 import com.ccastro.court.presentation.ui.theme.CourtTheme
 

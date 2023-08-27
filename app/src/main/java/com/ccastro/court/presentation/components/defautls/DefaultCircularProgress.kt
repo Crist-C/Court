@@ -1,4 +1,4 @@
-package com.ccastro.court.presentation.components
+package com.ccastro.court.presentation.components.defautls
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize

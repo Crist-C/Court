@@ -10,7 +10,7 @@ import com.ccastro.court.presentation.screens.splash.SplashScreen
 fun NavGraphBuilder.introduceNavGraph(navHostController: NavHostController) {
     navigation(
         route = Graph.INTRODUCE,
-        startDestination = IntroduceNavScreens.AppPresentation.route
+        startDestination = IntroduceNavScreens.Splash.route
     ){
         composable(route = IntroduceNavScreens.Splash.route) {
             SplashScreen(navHostController = navHostController)

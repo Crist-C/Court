@@ -1,4 +1,4 @@
-package com.ccastro.court.presentation.components
+package com.ccastro.court.presentation.components.defautls
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -21,7 +21,8 @@ fun CustomPositionDots(
     modifier: Modifier = Modifier,
     size: Int,
     currentPage: Int,
-    function: (Int) -> Unit) {
+    function: (Int) -> Unit
+) {
     Row(
         modifier = modifier
             .fillMaxWidth(),

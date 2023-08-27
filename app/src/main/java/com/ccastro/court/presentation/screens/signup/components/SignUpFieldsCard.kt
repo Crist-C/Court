@@ -1,13 +1,10 @@
-package com.ccastro.court.presentation.screens.singup.components
+package com.ccastro.court.presentation.screens.signup.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Email
 import androidx.compose.material3.ButtonDefaults
@@ -17,40 +14,19 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
-import androidx.navigation.compose.rememberNavController
-import com.ccastro.court.presentation.components.DefaultButton
-import com.ccastro.court.presentation.components.DefaultEnunciado
-import com.ccastro.court.presentation.components.DefaultTextField
-import com.ccastro.court.presentation.screens.singup.SingupViewModel
-import com.ccastro.court.presentation.ui.theme.CourtTheme
+import com.ccastro.court.presentation.components.defautls.DefaultButton
+import com.ccastro.court.presentation.components.defautls.DefaultEnunciado
+import com.ccastro.court.presentation.components.defautls.DefaultTextField
+import com.ccastro.court.presentation.screens.signup.credencials.SignUpCredentialsViewModel
 
 @Composable
-fun SingupContent(navHostController: NavHostController) {
-
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .verticalScroll(rememberScrollState()),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally,
-    ) {
-        //LogoMaasComponent(modifier = Modifier.padding(bottom = 0.dp))
-        SingupFieldsCard(
-            modifier = Modifier.padding(horizontal = 16.dp, vertical = 32.dp),
-            navHostController = navHostController
-        )
-    }
-}
-
-@Composable
-fun SingupFieldsCard(
+fun SignUpFieldsCard(
     modifier: Modifier = Modifier,
     navHostController: NavHostController,
-    viewModel: SingupViewModel = hiltViewModel(),
+    viewModel: SignUpCredentialsViewModel = hiltViewModel(),
 ){
 
     val state = viewModel.state
@@ -123,7 +99,7 @@ fun SingupFieldsCard(
                 modifier = Modifier.padding(start = 28.dp, end = 28.dp, top = 28.dp),
                 text = "REGISTRARME",
                 onClick ={ viewModel.onClickSignup()},
-                enable = state.isEnabledSingupButton
+                enable = state.isEnabledSignUpButton
             )
             DefaultButton(
                 modifier = Modifier.padding(start = 28.dp, end = 28.dp, bottom = 28.dp),
@@ -134,12 +110,4 @@ fun SingupFieldsCard(
         }
     }
 
-}
-
-@Preview(showSystemUi = true, showBackground = true)
-@Composable
-fun SingupContentPreview() {
-    CourtTheme {
-        SingupContent(navHostController = rememberNavController())
-    }
 }

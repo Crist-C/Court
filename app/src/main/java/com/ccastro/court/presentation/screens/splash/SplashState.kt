@@ -1,5 +1,8 @@
 package com.ccastro.court.presentation.screens.splash
 
+import com.google.firebase.auth.FirebaseUser
+
 data class SplashState (
-    val test: Int = 0
+    val nextScreen: String? = null,
+    var currentUser: FirebaseUser? = null
 )

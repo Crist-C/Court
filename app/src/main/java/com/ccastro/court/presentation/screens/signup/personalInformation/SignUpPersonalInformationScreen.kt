@@ -1,39 +1,41 @@
-package com.ccastro.court.presentation.screens.singup
+package com.ccastro.court.presentation.screens.signup.personalInformation
 
 import android.annotation.SuppressLint
 import android.view.WindowManager
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.ccastro.court.presentation.components.EditKeyBoardUiMode
+import com.ccastro.court.presentation.components.defautls.EditKeyBoardUiMode
 import com.ccastro.court.presentation.ui.theme.CourtTheme
-import com.ccastro.court.presentation.screens.singup.components.Singup
-import com.ccastro.court.presentation.screens.singup.components.SingupContent
+import com.ccastro.court.presentation.screens.signup.components.Singup
+import com.ccastro.court.presentation.screens.signup.personalInformation.components.SignUpPersonalInformationContent
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun SingupScreen(navHostController: NavHostController) {
+fun SignUpPersonalInformationScreen(navHostController: NavHostController) {
+
     @Suppress("DEPRECATION")
     (EditKeyBoardUiMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE))
+
     Scaffold (
         topBar = {
         },
         content = {
-                  SingupContent(navHostController)
+          SignUpPersonalInformationContent(navHostController)
         },
         bottomBar = {}
     )
+
     Singup(navHostController = navHostController)
+
 }
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
-fun SingupScreenPreview(){
+fun SignUpPersonalInformationScreenPreview(){
     CourtTheme() {
-        SingupScreen(navHostController = rememberNavController())
+        SignUpPersonalInformationScreen(navHostController = rememberNavController())
     }
 }

@@ -1,4 +1,4 @@
-package com.ccastro.court.presentation.components
+package com.ccastro.court.presentation.components.defautls
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth

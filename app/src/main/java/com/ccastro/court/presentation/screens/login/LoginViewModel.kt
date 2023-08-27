@@ -6,6 +6,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.ccastro.court.R
 import com.ccastro.court.domain.models.Response
 import com.ccastro.court.domain.use_cases.auth.AuthUseCases
 import com.google.firebase.auth.FirebaseUser
@@ -54,10 +55,10 @@ class LoginViewModel @Inject constructor(private val authUseCases: AuthUseCases)
     fun validateEmail() {
         if(Patterns.EMAIL_ADDRESS.matcher(state.email).matches()){
             state.isEmailValid = true
-            state.emailErrorMsg = ""
+            state.emailErrorMsg = R.string.empty_string
         }else{
             state.isEmailValid = false
-            state.emailErrorMsg = "email no valido"
+            state.emailErrorMsg = R.string.ingresa_t_email_de_forma_correcta
         }
         enabledLoginButton()
     }
@@ -65,10 +66,10 @@ class LoginViewModel @Inject constructor(private val authUseCases: AuthUseCases)
     fun validatePassword(){
         if(state.password.length >= 6){
             state.isPasswordValid = true
-            state.passwordErrorMsg = ""
+            state.passwordErrorMsg = R.string.empty_string
         } else{
             state.isPasswordValid = false
-            state.passwordErrorMsg = "al menos 6 caracteres"
+            //state.passwordErrorMsg = "al menos 6 caracteres"
         }
         enabledLoginButton()
     }
