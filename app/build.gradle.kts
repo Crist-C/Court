@@ -134,5 +134,10 @@ dependencies {
     // optional - Paging 3 Integration
     implementation(libs.androidx.room.paging)
 
+    //libphonenumber
+    implementation (libs.libphonenumber)
+    //implementation(libs.libphonenumber.kotlin.libphonenumber)
 
+    // RXKotlin
+    //implementation(libs.rxkotlin)
 }

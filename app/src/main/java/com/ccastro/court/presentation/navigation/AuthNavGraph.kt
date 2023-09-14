@@ -2,10 +2,13 @@ package com.ccastro.court.presentation.navigation
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.composable
+import androidx.navigation.navArgument
 import androidx.navigation.navigation
-import com.ccastro.court.presentation.screens.login.LoginScreen
-import com.ccastro.court.presentation.screens.signup.credencials.SignUpCredentialsScreen
+import com.ccastro.court.presentation.screens.userOnBoarding.login.LoginScreen
+import com.ccastro.court.presentation.screens.userOnBoarding.signup.credencials.SignUpCredentialsScreen
+import com.ccastro.court.presentation.screens.userOnBoarding.signup.personalInformation.SignUpPersonalInformationScreen
 
 fun NavGraphBuilder.authNavGraph(navHostController: NavHostController) {
     navigation(
@@ -15,13 +18,26 @@ fun NavGraphBuilder.authNavGraph(navHostController: NavHostController) {
         composable(route = AuthNavScreens.Login.route) {
             LoginScreen(navHostController = navHostController)
         }
-        composable(route = AuthNavScreens.SingUp.route) {
+        composable(route = AuthNavScreens.SingUpCredentials.route) {
             SignUpCredentialsScreen(navHostController = navHostController)
+        }
+        composable(
+            route = AuthNavScreens.SingUpPersonalInformation.route,
+            arguments = listOf(navArgument("user") {
+                type = NavType.StringType
+            })
+        ) {
+            it.arguments?.getString("user")?.let { userData ->
+                SignUpPersonalInformationScreen(navHostController = navHostController, user = userData)
+            }
         }
     }
 }
 
 sealed class AuthNavScreens (val route: String){
     object Login: AuthNavScreens("Login")
-    object SingUp: AuthNavScreens("SingUp")
+    object SingUpCredentials: AuthNavScreens("SingUpCredentials")
+    object SingUpPersonalInformation: AuthNavScreens("SingUpPersonalInformation/{user}") {
+        fun passUserCredentials(user: String) = "SingUpPersonalInformation/$user"
+    }
 }

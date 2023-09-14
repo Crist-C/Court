@@ -3,7 +3,7 @@ package com.ccastro.court.core
 object Constans {
 
     // LOG
-    val TAG = "APPLOG"
+    const val TAG = "APPLOG"
     // Collections names
-    val USER_COLLECTION = "USERS"
+    const val USER_COLLECTION = "usuarios"
 }

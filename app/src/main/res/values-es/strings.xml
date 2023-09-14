@@ -13,7 +13,7 @@
     <string name="empty_string" />
     <string name="ingresa_un_nombre_valido">Ingresa uno o dos nombres válidos</string>
     <string name="ingresa_t_email_de_forma_correcta">ingresa tú email de forma correcta</string>
-    <string name="ingresa_una_contraseña_que_cumpla_los_requerimientos">Ingresa al menos 6 caracteres</string>
+    <string name="ingresa_una_contraseña_que_cumpla_los_requerimientos">Debe contener ente 8 y 25 caracteres\nuna mayúscula, una minúscula\nun número y \nun carácter especial</string>
     <string name="las_contrase_as_no_coinciden">Las contraseñas no coinciden</string>
     <string name="finaliza_tu_registro_title">FINALIZA TU REGISTRO\t</string>
     <string name="nombres_input_field_text">Nombres</string>
@@ -21,4 +21,6 @@
     <string name="pais_input_field_text">País</string>
     <string name="celular">Número celular</string>
     <string name="finalizar">FINALIZAR REGISTRO</string>
+    <string name="country">País</string>
+    <string name="numero_de_telefono_no_valido">Número de télefono no válido</string>
 </resources>

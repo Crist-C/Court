@@ -6,5 +6,5 @@ import javax.inject.Inject
 
 class Create @Inject constructor(private val userRepository: UserRepository){
 
-    suspend operator fun invoke(user: User) = userRepository.create(user)
+    suspend operator fun invoke(user: User) = userRepository.createUser(user)
 }

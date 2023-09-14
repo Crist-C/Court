@@ -11,7 +11,7 @@ fun RootNavGraph( navHostController: NavHostController, activity: Activity) {
     NavHost(
         navController = navHostController,
         route = Graph.ROOT,
-        startDestination = Graph.AUTHENTICATION
+        startDestination = Graph.INTRODUCE
     ) {
         introduceNavGraph(navHostController = navHostController)
         authNavGraph(navHostController = navHostController)

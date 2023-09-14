@@ -4,8 +4,8 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
-import com.ccastro.court.presentation.screens.appPresentation.AppPresentationScreen
-import com.ccastro.court.presentation.screens.splash.SplashScreen
+import com.ccastro.court.presentation.screens.userOnBoarding.onBoardingApp.OnBoardingAppScreen
+import com.ccastro.court.presentation.screens.userOnBoarding.splash.SplashScreen
 
 fun NavGraphBuilder.introduceNavGraph(navHostController: NavHostController) {
     navigation(
@@ -17,12 +17,12 @@ fun NavGraphBuilder.introduceNavGraph(navHostController: NavHostController) {
         }
 
         composable(route = IntroduceNavScreens.AppPresentation.route) {
-            AppPresentationScreen(navHostController = navHostController)
+            OnBoardingAppScreen(navHostController = navHostController)
         }
     }
 }
 
 sealed class IntroduceNavScreens(val route: String) {
     object Splash: IntroduceNavScreens(route = "Splash")
-    object AppPresentation: IntroduceNavScreens(route = "Presentation")
+    object AppPresentation: IntroduceNavScreens(route = "onBoardingApp")
 }
