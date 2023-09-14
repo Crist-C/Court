@@ -33,7 +33,7 @@ fun SignUpPersonalInformationScreen(navHostController: NavHostController, user: 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun SignUpPersonalInformationScreenPreview(){
-    CourtTheme() {
+    CourtTheme {
         SignUpPersonalInformationScreen(navHostController = rememberNavController(), "")
     }
 }

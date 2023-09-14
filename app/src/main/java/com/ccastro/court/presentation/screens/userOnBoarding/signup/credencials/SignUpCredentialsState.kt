@@ -2,8 +2,6 @@ package com.ccastro.court.presentation.screens.userOnBoarding.signup.credencials
 
 import com.ccastro.court.R
 import com.ccastro.court.domain.models.User
-import com.ccastro.court.presentation.components.models.FormModel
-import com.ccastro.court.presentation.navigation.AuthNavScreens
 import com.google.gson.Gson
 
 

@@ -5,7 +5,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.ccastro.court.presentation.screens.userOnBoarding.profile.ProfileState
 import com.ccastro.court.domain.use_cases.auth.AuthUseCases
 import com.ccastro.court.domain.use_cases.user.UserUseCases
 import dagger.hilt.android.lifecycle.HiltViewModel

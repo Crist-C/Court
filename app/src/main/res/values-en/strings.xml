@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">court</string>
+    <string name="logo_image_content_description">Logo image</string>
+    <string name="presentation_images_content_description">Presentation Images</string>
     <string name="email">Email</string>
     <string name="CREATE_YOUR_ACCOUNT">CREATE YOUR ACCOUNT</string>
     <string name="por_favor_ingresa_tus_datos_para_continuar">Please type your information</string>

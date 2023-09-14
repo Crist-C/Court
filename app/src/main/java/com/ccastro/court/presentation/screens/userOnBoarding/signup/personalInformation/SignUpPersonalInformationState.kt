@@ -3,7 +3,6 @@ package com.ccastro.court.presentation.screens.userOnBoarding.signup.personalInf
 import com.ccastro.court.R
 import com.ccastro.court.domain.models.Country
 import com.ccastro.court.domain.models.User
-import com.ccastro.court.presentation.components.models.FormModel
 import com.google.gson.Gson
 
 
