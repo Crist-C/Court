@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
@@ -18,7 +17,6 @@ import androidx.navigation.compose.rememberNavController
 import com.ccastro.court.presentation.screens.userOnBoarding.signup.credencials.SignUpCredentialsViewModel
 import com.ccastro.court.presentation.ui.theme.CourtTheme
 import com.google.accompanist.pager.ExperimentalPagerApi
-import com.google.accompanist.pager.PagerState
 
 @OptIn(ExperimentalPagerApi::class)
 @Composable

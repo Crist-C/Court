@@ -5,7 +5,6 @@ import androidx.compose.runtime.Composable
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import com.ccastro.court.core.Constans.TAG
-import com.ccastro.court.presentation.navigation.AuthNavScreens
 import com.ccastro.court.presentation.screens.userOnBoarding.signup.credencials.SignUpCredentialsViewModel
 
 @Composable

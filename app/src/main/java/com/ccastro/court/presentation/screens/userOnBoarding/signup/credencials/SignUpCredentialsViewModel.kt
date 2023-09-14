@@ -5,7 +5,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
 import com.ccastro.court.R
 import com.ccastro.court.domain.models.Response
 import com.ccastro.court.domain.models.User
@@ -14,17 +13,13 @@ import com.ccastro.court.domain.use_cases.user.UserUseCases
 import com.ccastro.court.presentation.navigation.AuthNavScreens
 import com.google.firebase.auth.FirebaseUser
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class SignUpCredentialsViewModel @Inject constructor(private val authUseCases: AuthUseCases, private val userUseCases: UserUseCases): ViewModel(){
+class SignUpCredentialsViewModel @Inject constructor(): ViewModel(){
 
     var state by mutableStateOf(SignUpCredentialsState())
         private set
-
-    // SingUp Response
-    var signUpResponse by mutableStateOf<Response<FirebaseUser>?>(null)
 
 
     // -----------   LOGIC FUNCTIONS    ----------- //

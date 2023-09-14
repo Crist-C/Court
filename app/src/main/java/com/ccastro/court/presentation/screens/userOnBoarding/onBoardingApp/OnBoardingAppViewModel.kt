@@ -16,7 +16,7 @@ class OnBoardingAppViewModel @Inject constructor(): ViewModel() {
     @OptIn(ExperimentalPagerApi::class)
     suspend fun nextPagerView() {
         if (state.pagerState.currentPage == state.imagePresentationList.size - 1) {
-
+            // nada para hacer en este caso
         }else {
             state.pagerState.animateScrollToPage(state.pagerState.currentPage + 1)
             //state = state.copy(
