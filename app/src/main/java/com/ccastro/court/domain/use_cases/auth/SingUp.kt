@@ -6,5 +6,5 @@ import javax.inject.Inject
 
 class SingUp @Inject constructor(private val repository: AuthRepository){
 
-    suspend operator fun invoke(user: User, password: String) = repository.singUp(user, password)
+    suspend operator fun invoke(user: User, password: String) = repository.signUp(user, password)
 }

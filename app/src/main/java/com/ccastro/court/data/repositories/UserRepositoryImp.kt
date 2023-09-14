@@ -13,7 +13,7 @@ import javax.inject.Inject
 import javax.inject.Named
 
 class UserRepositoryImp @Inject constructor(@Named("UserCollection") private val userCollection: CollectionReference) : UserRepository {
-    override suspend fun create(user: User): Response<Boolean> {
+    override suspend fun createUser(user: User): Response<Boolean> {
         return try {
             userCollection.document(user.id).set(user).await()
             Response.Success(true)

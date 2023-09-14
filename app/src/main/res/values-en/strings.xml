@@ -21,4 +21,6 @@
     <string name="pais_input_field_text">Country</string>
     <string name="celular">Phone nomber</string>
     <string name="finalizar">FINALIZAR REGISTRO</string>
+    <string name="country">Country</string>
+    <string name="numero_de_telefono_no_valido">Invalid number</string>
 </resources>
