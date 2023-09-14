@@ -6,12 +6,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import com.ccastro.court.R
-import com.ccastro.court.domain.models.Response
 import com.ccastro.court.domain.models.User
-import com.ccastro.court.domain.use_cases.auth.AuthUseCases
-import com.ccastro.court.domain.use_cases.user.UserUseCases
 import com.ccastro.court.presentation.navigation.AuthNavScreens
-import com.google.firebase.auth.FirebaseUser
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

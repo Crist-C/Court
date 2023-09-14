@@ -42,7 +42,6 @@ import com.ccastro.court.domain.models.Country
 import com.ccastro.court.presentation.components.defaults.DefaultButton
 import com.ccastro.court.presentation.components.defaults.DefaultEnunciado
 import com.ccastro.court.presentation.components.defaults.DefaultTextField
-import com.ccastro.court.presentation.navigation.AuthNavScreens
 import com.ccastro.court.presentation.navigation.Graph
 import com.ccastro.court.presentation.screens.userOnBoarding.signup.personalInformation.SignUpPersonalInformationViewModel
 import com.ccastro.court.presentation.ui.theme.CourtTheme
